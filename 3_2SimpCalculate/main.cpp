@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stack>
 #include <cstdio>
+#include <iomanip>
 
 using namespace std;
 
@@ -69,9 +70,52 @@ int main()
 
     while ( gets(str) )
     {
-        if( str[0] == '0' && str[1] == 0 )
+        if (str[0] == '0' && str[1] == 0)
             break;
-
+        bool retop;
+        int retnum;
+        int idx = 0;
+        while (!op.empty())
+            op.pop();
+        while (!in.empty())
+            in.pop();
+        while (true)
+        {
+            get_op(retop, retnum, idx);
+            if (retop == false)
+                in.push((double) retnum);
+            else
+            {
+                double tmp;
+                if (op.empty() == true || mat[retnum][op.top()] == 1)
+                    op.push(retnum);
+                else
+                {
+                    while (mat[retnum][op.top()] == 0)
+                    {
+                        int ret = op.top();
+                        op.pop();
+                        double b = in.top();
+                        in.pop();
+                        double a = in.top();
+                        in.pop();
+                        if (ret == 1)
+                            tmp = a + b;
+                        else if (ret == 2)
+                            tmp = a - b;
+                        else if (ret == 3)
+                            tmp = a * b;
+                        else
+                            tmp = a / b;
+                        in.push(tmp);
+                    }
+                    op.push(retnum);
+                }
+            }
+            if (op.size() == 2 && op.top() == 0)
+                break;
+        }
+        cout<<fixed<<setprecision(2)<<in.top()<<endl;
     }
     //std::cout << "Hello, World!" << std::endl;
     return 0;
