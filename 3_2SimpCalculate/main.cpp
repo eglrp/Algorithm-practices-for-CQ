@@ -116,7 +116,6 @@ int main()
                 break;
         }
         cout<<fixed<<setprecision(2)<<in.top()<<endl;
-
     }
     //std::cout << "Hello, World!" << std::endl;
     return 0;
