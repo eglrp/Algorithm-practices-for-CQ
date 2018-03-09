@@ -1,0 +1,3 @@
+F:/CQ/3_2SimpCalculate/cmake-build-debug/CMakeFiles/3_2SimpCalculate.dir
+F:/CQ/3_2SimpCalculate/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/CQ/3_2SimpCalculate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
