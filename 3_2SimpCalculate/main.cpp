@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <cstdio>
 
 using namespace std;
 
@@ -66,7 +67,11 @@ void  get_op( bool &reto, int &retn, int &i )
 int main()
 {
 
-
+    while ( gets(str) )
+    {
+        if( str[0] == '0' && str[1] == 0 )
+            break;
+    }
     //std::cout << "Hello, World!" << std::endl;
     return 0;
 }
