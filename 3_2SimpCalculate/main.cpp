@@ -115,7 +115,7 @@ int main()
             if (op.size() == 2 && op.top() == 0)
                 break;
         }
-        <<in.top()<<endl;
+        cout<<fixed<<setprecision(2)<<in.top()<<endl;
     }
     //std::cout << "Hello, World!" << std::endl;
     return 0;
