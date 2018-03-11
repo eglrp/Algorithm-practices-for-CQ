@@ -57,7 +57,7 @@ int main()
         }
         cout<<"Case "<<++cas<<": ";
         if( dp[n][0+OFFSET] == 0 )
-            cout<<(havezero ? "0" : "-1")<<endl;
+            cout<<(havezero ? "0" : "-1")<<endl;b
         else
             cout<<dp[n][0+OFFSET]/2<<endl;
     }
