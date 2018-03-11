@@ -1,0 +1,3 @@
+F:/CQ/6_6OilDeposit/cmake-build-debug/CMakeFiles/6_6OilDeposit.dir
+F:/CQ/6_6OilDeposit/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/CQ/6_6OilDeposit/cmake-build-debug/CMakeFiles/rebuild_cache.dir
